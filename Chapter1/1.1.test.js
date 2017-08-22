@@ -1,17 +1,19 @@
 const isUniqueChars = require('./1.1');
 
-test('empty string should return true', () => {
+describe('testing isUniqueChars(string)', () => {
+  test('empty string should return true', () => {
     expect(isUniqueChars('')).toBe(true);
-});
+  });
 
-test('"a" should return true', () => {
+  test('"a" should return true', () => {
     expect(isUniqueChars('a')).toBe(true);
-});
+  });
 
-test('"abcde" should return true', () => {
+  test('"abcde" should return true', () => {
     expect(isUniqueChars('abcde')).toBe(true);
-});
+  });
 
-test('"abcade" should return false', () => {
+  test('"abcade" should return false', () => {
     expect(isUniqueChars('abcade')).toBe(false);
+  });
 });
