@@ -16,4 +16,24 @@ describe('testing isUniqueChars(string)', () => {
   test('"abcade" should return false', () => {
     expect(isUniqueChars('abcade')).toBe(false);
   });
+
+  test('"ABCDEFG" should return true', () => {
+    expect(isUniqueChars('ABCDEFG')).toBe(true);
+  });
+
+  test('"ABCDAEFG" should return false', () => {
+    expect(isUniqueChars('ABCDAEFG')).toBe(false);
+  });
+
+  test('"1236456" should return false', () => {
+    expect(isUniqueChars('1236456')).toBe(false);
+  });
+
+  test('"{}:"<>()_+}" should return false', () => {
+    expect(isUniqueChars('{}:"<>()_+}')).toBe(false);
+  });
+
+  test('"~!@#$%^&*()" should return false', () => {
+    expect(isUniqueChars('~!@#$%^&*()')).toBe(false);
+  });
 });
