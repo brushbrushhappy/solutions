@@ -6,20 +6,20 @@ describe('testing oneAway(string)', () => {
   });
 
   test('"pale","ple" should return true', () => {
-   expect(oneAway('',"")).toBe(true);
+    expect(oneAway('',"")).toBe(true);
   });
 
   test('"abcde" should return true', () => {
-   expect(oneAway("pale","ple" )).toBe(true);
+    expect(oneAway("pale","ple" )).toBe(true);
   });
 
   test('"pales","pale"  should return true', () => {
-   expect(oneAway("pales","pale" )).toBe(true);
+    expect(oneAway("pales","pale" )).toBe(true);
   });
   test('"pale","bale"  should return true', () => {
-   expect(oneAway("pale","bale" )).toBe(true);
+    expect(oneAway("pale","bale" )).toBe(true);
   });
   test('"pale","bake"  should return false', () => {
-   expect(oneAway("pale","bake" )).toBe(false);
+    expect(oneAway("pale","bake" )).toBe(false);
   });
 });

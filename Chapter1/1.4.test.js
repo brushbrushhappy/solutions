@@ -6,15 +6,15 @@ describe('testing IsPalindromePermutation(string)', () => {
   });
 
   test('"tact coa" should return true', () => {
-   expect(IsPalindromePermutation("tact coa" )).toBe(true);
+    expect(IsPalindromePermutation("tact coa" )).toBe(true);
   });
 
   test('"tact oa" should return false', () => {
-   expect(IsPalindromePermutation("tact oa" )).toBe(false);
+    expect(IsPalindromePermutation("tact oa" )).toBe(false);
   });
 
   test('"tact ca" should return true', () => {
-   expect(IsPalindromePermutation("tact ca" )).toBe(true);
+    expect(IsPalindromePermutation("tact ca" )).toBe(true);
   });
  
 });
